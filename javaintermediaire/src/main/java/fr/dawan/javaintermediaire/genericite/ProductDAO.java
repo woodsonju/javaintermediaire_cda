@@ -1,7 +1,8 @@
 package fr.dawan.javaintermediaire.genericite;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class ProductDAO implements IDao<Product> {
 	
@@ -29,6 +30,18 @@ public class ProductDAO implements IDao<Product> {
 	public void insert(Product obj) {
 		
 	}
+	
+	//Predicate<Product> predicate =  (p) -> p.getPrice() > 100
+	public void add(Product p, Predicate<Product> predicate) {
+		boolean b = predicate.test(p);
+		if(b) {
+			lp.add(p);
+		}
+		
+	}
+	
+	
+	
 
 
 }

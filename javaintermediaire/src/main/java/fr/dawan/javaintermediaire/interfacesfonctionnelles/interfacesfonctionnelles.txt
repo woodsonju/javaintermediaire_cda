@@ -4,3 +4,25 @@ seule méthode abstraite : c'est grace à cette restriction qu'il sera possible 
 les lambdas, car lors de l'exécution,  java pourra automatiquement déterminer 
 quelle est la signature de la méthode
 
+
+Creer une classe ProductOperation
+Créer deux méthodes permettant de récuperer une collection de String répresentant 
+la description du produit et une méthode permettant de selectionner une collection 
+d'entier représentant leur prix 
+
+
+ 
+test methode 1  :  	
+	List<Product> lp = Arrays.asList(new Product("Ordinateur", 1200, 2), new Product("Clavier", 400, 8),
+				new Product("Imprimante", 700, 8));
+	
+	==> [Ordinateur, Clavier, Imprimante]
+	
+
+test méthode 2 : 
+List<Product> lp = Arrays.asList(new Product("Ordinateur", 1200, 2), new Product("Clavier", 400, 8),
+				new Product("Imprimante", 700, 8));
+				
+	===>  [1200.0, 400.0, 700.0]
+
+
