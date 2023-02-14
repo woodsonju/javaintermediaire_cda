@@ -1,0 +1,21 @@
+La reflexion est la capacité d'un langage à inspecter et à appeler dynamiquement des classes, 
+des méthodes, des attributs, etc au moment de l'execution sans connnaitre les noms de 
+la classe, des méthodes etc. 
+
+L'introspection est la capacité d'un programme à examiner son propre état, d'inspecter le 
+code et de voir les types objets
+
+La réflexion est importante car elle vous permet d'écrire des programmes qui n'ont pas 
+besoin de tout "savoir" au moment  de la compilation, ce qui les rend dynamiques, car 
+ils peuvent être liés au moment de l'exécution
+
+Le code peut être ecrit avec des interfaces, mais les classes réelles à utiliser peuvent 
+être instanciées en utilisant la reflexion à partir des fichiers de configuration.
+De nombreux frameword modernes utilise largement la réflexion pour cette raison
+
+Un cas d'utilisation très courant en Java est l'utilisation des annotations.
+JUnit, par exemple, utilise la réflexion pour rechercher dans vos classes les méthodes 
+marquées avec l'annotation @Test, puis les appelera lors de l'execution du test 
+unitaire. 
+
+Les classe requises pour la reflexion sont fournies dans le package java.lang.reflect

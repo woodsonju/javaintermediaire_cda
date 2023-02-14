@@ -1,0 +1,6 @@
+Definition de l'interface fonctionnelle 
+Ce concept, introduit depuis java 8, permet de definir une interface n'ayant qu'une 
+seule méthode abstraite : c'est grace à cette restriction qu'il sera possible d'utiliser 
+les lambdas, car lors de l'exécution,  java pourra automatiquement déterminer 
+quelle est la signature de la méthode
+

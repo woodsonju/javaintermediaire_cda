@@ -1,0 +1,15 @@
+La généricité permet d'exprimer des méthodes et des classes identiques 
+sur le plan algorithmique mais différent sur la base des types
+
+Permet d'ecrire du code qui peut être réutilisé pour des objets de types différent.
+Nous avons plus  besoin de programmer des classes différentes  pour collecter 
+les objets String, Double, Integer
+
+  Intérêts:
+      - réutilisation du code
+      - moins catch : gain de temps et des ressources à l'execution
+      - moins de risques d'erreurs liées aux types de données
+      
+
+
+	
