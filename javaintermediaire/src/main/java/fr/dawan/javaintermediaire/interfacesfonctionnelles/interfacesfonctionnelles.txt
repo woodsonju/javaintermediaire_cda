@@ -12,17 +12,20 @@ d'entier représentant leur prix
 
 
  
-test methode 1  :  	
+methode 1  :  	findDescriptionProduct (listProduct, Function<Product, String>)
 	List<Product> lp = Arrays.asList(new Product("Ordinateur", 1200, 2), new Product("Clavier", 400, 8),
 				new Product("Imprimante", 700, 8));
 	
 	==> [Ordinateur, Clavier, Imprimante]
 	
 
-test méthode 2 : 
+méthode 2 : findPriceProduct(listProduct, Function<Product, Double>)
 List<Product> lp = Arrays.asList(new Product("Ordinateur", 1200, 2), new Product("Clavier", 400, 8),
 				new Product("Imprimante", 700, 8));
 				
 	===>  [1200.0, 400.0, 700.0]
 
 
+
+Creer une classe de test ProductOperationTest 
+Tester les deux méthodes

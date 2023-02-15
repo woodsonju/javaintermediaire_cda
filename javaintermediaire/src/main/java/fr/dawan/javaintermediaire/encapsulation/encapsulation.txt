@@ -1,0 +1,10 @@
+1- L'encasulation est le fait de regrouper dans une seule entité les données et 
+les traitements qui sont propres à l'entité. 
+
+2- La partie interne, doit être non visble par les utilisateurs - les attributs font partie 
+du niveau interne. Il faut donc les definir en "private"
+
+3- Possibilité d'offrir aux utilisateurs l'accès aux attributs via des getters et setters
+mais avec du contrôle 
+
+4- Interface : contient que des méthodes public (getters-setters, et d'autres méthodes public)
