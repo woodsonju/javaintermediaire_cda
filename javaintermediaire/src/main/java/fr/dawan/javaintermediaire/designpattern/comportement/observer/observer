@@ -1,0 +1,12 @@
+OBSERVER 
+
+Objectif : Permet de mettre en place un mécanisme de souscripteur pour envoyer des 
+notifications à plusieurs objets, au sujet d'un évenement concernant les objets 
+qu'ils observent
+
+Le pattern observer contient : 
+	- une interface Observer qui définit une méthode pour recevoir des notifications
+ 	- Une interface Subject qui définit une méthode pour enregistrer et supprimer des 
+ 		observateurs, et pour notifier les observateurs lorsqu'un événement se produit
+ 	- Ainsi que des classes concrètes qui implémentent ces interfaces (ConcreteSubject 
+ 		et ConcreteObserver).

@@ -1,0 +1,46 @@
+Le principe du singleton repose : 
+	- Sur un constructeur  privé et sans paramètre pour eviter une instanciation 
+		par d'autres classes
+	- Un attribut privé et statique qui conservera l'instance unique de la classe
+		Par convention, celle-ci est souvent nommée "instance"
+	- Une méthode "getIntance()" qui vérifie qu'une instance de la classe a été créée 
+		et la renvoie 
+		
+
+1.2  Considérons deux threads appeleant cette méthode de faàon concurrente 
+Thread 1 : Appelle getInstance() et détermine que l'instance est null en ligne 1 
+Thread 1 : Entre dans le bloc If puis est préempté par le Thread 2 avant 
+			l'execution de la ligne 2 
+Thread 2: Appelle getIntance() et détermine que l'instance est null en ligne 1 
+Thread 2 entre dans le bloc If, crée un nouveau Pdf et assigne ce nouvelle 
+		objet à la variable instance en ligne 2
+Thread 2 retourne la réference au Singleton en ligne 3 
+Thread 2 est préempté par le Thread 1 
+Thread 1 reprend où il s'était arrêté et execute la ligne 2 créant alors une autre instance 
+		Singleton  
+Thread 1 retourne cette nouvelle instance en ligne 3
+
+
+SOLUTION : Création d'un singleton multithread
+Thread 1 : Appelle getInstance() 
+Thread 1 : Entre dans le bloc synchronisé  en //1, car instance estn null 
+Thread 1 est préempté par Thread 2
+Thread 2: entre dans la méthode getInstance() 
+Thread 2 essaie d'obtenir le verrou, Thread 2 est bloqué en //1 
+Thread 2 est préempté par Thread 1
+Thread 1 reprend  et comme l'instance est null en //2, crée une instance de Pdg 
+		et assigne sa reference à la variable instance 
+Thread 1 sort du bloc synchronisé et renvoie l'instance 
+Thread 1 est préempté par Thread 2
+Thread 2 acquiert le verrou en //1 et verifie si instance est null 
+comme instance n'est plus null, un second Singleton n'est pas créé et celui créé par le 
+Thread 1 est retourné
+
+
+CONCLUSION : 
+Ce code fonctionne bien en environnement multithread 
+Toutefois la synchronisation de la méthode n'est nécessaure lors 
+du premier appel (quand instance est null) 
+Avec ce code tous les appels devront payer le coût de la synchronisation 
+Ce coût peut poser des problèmes de performance lors de fortes montées 
+en charge de l'application 

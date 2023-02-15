@@ -1,0 +1,4 @@
+Un exemple pour illustrer la mise en oeuvre du pattern Observer
+
+Les clients sont attachés à la Bank et sont notifiés chaque fois que le solde 
+de la Bank change

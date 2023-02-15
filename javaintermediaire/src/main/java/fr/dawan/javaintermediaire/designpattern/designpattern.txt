@@ -1,0 +1,6 @@
+GOF: Gang of Four 
+Design Pattern : Solutions classiques à des problèmes récurrentes de la conception
+objet 
+
+Patrons de création :
+	Factory - Builder - Singleton - Prototype - Abstract Factory

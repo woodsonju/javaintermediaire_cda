@@ -1,0 +1,3 @@
+Avoir une classe pour construire des objets sans préciser leur classes concretes 
+
+

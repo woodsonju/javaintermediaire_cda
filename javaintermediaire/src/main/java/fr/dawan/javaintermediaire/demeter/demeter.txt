@@ -1,0 +1,34 @@
+Généralement, Quand on développe une classe, on ne fait pas toujours attention
+aux dependances de celle-ci. 
+Une classe peut utiliser d'autres classes soit par composition, soit par des passages
+par argument dans les méthodes. 
+
+Résultat : Quand vous ecrivez une classe, elle va générer des dépendances vers 
+			d'autres et parfois de manière transitoire, c'est à dire : 
+	- Une classe A utilise classe B 
+	- Une méthode B retourne un type C
+	- La classe A va donc pouvoir utilise le type C
+	
+
+LOI DE DEMETER : 
+	Chaque unité (classe) doit avoir une connaissance limitée des autres unités : 
+		- Elle doit voir que les unités etroitement liées à l'unité actuelle 
+		-Traduit autrement, nous pourrions dire : 
+			Chaque unité ne doit parler qu'à ses amis. Ne pas parler aux étrangers
+			
+	En pratique : 
+	Cela veut dire qu'une méthode d'une classe peut invoquer les méthodes 
+		- de l'objet lui même 
+		- des arguments de la méthode 
+		- des objets crées dans la méthode 
+		- des propriétés et champs de l'objet
+		 
+
+CONCLUSION 
+	La loi de Demeter est interessant pour plusieurs raisons : 
+		- Tout d'abord, elle est facile à comprendre et facile à mettre en oeuvre 
+		- Elle permet de mieux separer les comportement (chaque réalise une seule 
+			chose cela rejoint le principe SRP)
+		- Elle permet de faciliter la maintenance puisque PaperBoy devient indépendant 
+		aux modifications de Wallet (ce qui n'était pas le cas avant)
+		- Elle permet de faciliter les tests  
