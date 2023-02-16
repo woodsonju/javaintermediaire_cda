@@ -593,7 +593,7 @@
 											"top": 332,
 											"width": 191,
 											"height": 13,
-											"text": "+observers: List<Observer>",
+											"text": "-observers: List<Observer>",
 											"horizontalAlignment": 0
 										}
 									],
@@ -918,7 +918,7 @@
 											"top": 318,
 											"width": 143,
 											"height": 13,
-											"text": "+name: String",
+											"text": "-name: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1839,6 +1839,7 @@
 								"$ref": "AAAAAAGGVZYzhNQ+sVA="
 							},
 							"name": "observers",
+							"visibility": "private",
 							"type": "List<Observer>"
 						}
 					],
@@ -1951,6 +1952,7 @@
 							}
 						}
 					],
+					"visibility": "private",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -1959,6 +1961,7 @@
 								"$ref": "AAAAAAGGVZh+CdSsv+Q="
 							},
 							"name": "name",
+							"visibility": "private",
 							"type": "String"
 						}
 					]
