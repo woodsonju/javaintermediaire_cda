@@ -10,6 +10,7 @@ public class Product implements Subject<Double> {
 	
 	private List<Observer<Double>> observers;
 	
+	
 	public Product() {
 	}
 	

@@ -1,0 +1,20 @@
+Le design pattern Chain of responsability est un modèle de programmation orienté objet
+qui permet de déléguer la responsabilité de traiter une demande à une série de classes.
+
+Dans ce modèle, chaque objet dans la chaine à la responsabilité de traiter la demande 
+Si un objet ne peut pas traiter la demande, il peut la transmettre à l'objet suivant dans 
+la chaine 
+Cela continue jusqu'à ce qu'un objet puisse traiter la demande ou jusqu'à 
+ce que la fin de la chaine soit atteinte 
+
+EXEMPLE : 
+La gestion d'une requête par trois objet 
+Trois objet peuvent traiter la requête/demande : 
+	- Teacher   (1)
+	- PedagDirector (2)
+	- Director		(3)
+	
+La chaine de responsabilité est utile dans des situations où les demandes peuvent 
+être traitée de manière modulaire et hiérarchique
+Ce modèle de conception peut simplifier le code, ameliorer la flexibilité, et faciliter 
+l'ajout de nouvelles fonctionnalités

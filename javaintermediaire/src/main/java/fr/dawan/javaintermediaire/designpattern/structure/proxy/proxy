@@ -1,0 +1,8 @@
+Le pattern proxy est un patron de conception utilisé pour controler l'accès à une classe 
+ou une ressource. 
+
+Il consiste à créer un objet intermédiaire qui sert d'interface pour une classe réelle 
+
+Cet objet intermédiaire peut être utilisé pour contrôler l'accès à la classe réelle 
+en ajoutant des fonctionnalités telles que la verification des autorisations, le suivi 
+des statistiques ou la gestion de la mémoire cache 

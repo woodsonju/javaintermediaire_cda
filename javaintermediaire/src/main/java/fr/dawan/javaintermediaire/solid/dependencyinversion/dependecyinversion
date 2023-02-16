@@ -1,0 +1,4 @@
+Dependency Injection (injection de dépendance) 
+
+Les couches supérieurs doivent rester indépendant des couches inférieures
+Ils doivent dependre d'interfaces

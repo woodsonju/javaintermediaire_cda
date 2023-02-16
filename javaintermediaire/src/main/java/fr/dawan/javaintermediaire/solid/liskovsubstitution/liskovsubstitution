@@ -1,0 +1,14 @@
+liskovSubstitution 
+
+Le principe de substitution de Liskov (Liskov Substitution Principle - LSP) stipule qu'un 
+objet d'une sous-classe devrait être capable de remplacer un objet de la classe mère
+sans de conséquences dans le comportement du programme
+
+Autrement dit, si une classe mère définit un certain comportement, les sous-classes
+de cette classe devraient être capables de remplacer la classe mère sans 
+causer de problèmes.
+
+
+Pas de cast et surtout pas de reflexion
+Il faut répondre à la question suivante:
+à quel moment un objet enfant peut remplacer un objet

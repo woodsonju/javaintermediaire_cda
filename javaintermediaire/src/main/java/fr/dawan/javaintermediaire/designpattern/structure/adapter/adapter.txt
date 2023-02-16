@@ -1,0 +1,17 @@
+Il s'agit d'un moyen de connecter des objets qui n'ont pas été conçus pour 
+fonctionner ensemble, en les adaptant à un format commun.
+
+L'idée de base de l'Adapter est de créer un objet intermédiaire qui implémente 
+l'interface souhaitée et qui contient une référence à l'objet source. 
+Ce nouvel objet intermédiaire peut traduire les appels vers l'objet source dans un format
+compatible.
+
+APPLICATION 
+L'adapter est un patron de conception qui permet de faire correspondre des interfaces 
+incompatibles 
+Il peut être utilisé pour adapter un objet XML à un Objet JSON ou vice versa
+
+Creation d'une application travaillant avec le formant XML mais utilisant un service 
+de données qui renvoie du JSON
+
+
