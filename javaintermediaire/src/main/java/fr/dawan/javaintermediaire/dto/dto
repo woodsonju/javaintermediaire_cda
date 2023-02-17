@@ -1,0 +1,25 @@
+DTO (Data Transfert Object)
+Un DTO permet de créer des objets indépendants qui vont servir à tranferer des 
+données entre la couche service et la couche presentation 
+La couche présentation (Spring MVC, Webservices) ne doit manipuler que des DTOs 
+Le service retourne ou prend en paramètre des DTOs et sera en charge de transformation 
+pour appeler les repositories 
+La conversion entity (classes persistantes)/DTO peut être réalisée manuellemennt 
+ou en utilisant une librairie externe  comme ModelMapper ou MapStruct  
+
+Les DTOs sont souvent utilisés pour améliorer les performances des applications 
+en minimisant le nombre de données transférées entre les couches. 
+Il indique clairement quels champs seront envoyés à la couche présentation
+
+Avantages : 
+	Les DTOs facilitent la mise à jour de la base de données. 
+	Il est souvent indispensable de remanier, de migrer la base de données 
+	sans que ce changement n'ait d'impact sur le client. 
+	Cette séparation facilite les optimisations, les modifications de la base 
+	de données sans affecter le client 
+	
+Les inconvénients : 
+	Augmente la complexité 
+	Il est possible de dupliquer le code 
+	Ajouter une nouvelle couche impose de la traverser, ce qui ajoute 
+	un delai et une possible perte de performance

@@ -2,16 +2,38 @@ Créer une application de gestion de magasin en ligne qui permet aux clients
 d'acheter des produits [id, name, price] 
 
 Cette application propose différents modes de paiement : 
-	•	Par carte de crédit [CardNumber, cvv, expirationDate]
-	•	PayPal  [email, password]
+	•	Par carte de crédit [CardNumber, cvv, expirationDate] : class CreditCardPayment
+	•	PayPal  [email, password]  : class PayPalPayment
 	•	On n’implémentera pas la logique métier pour ces deux modes de paiement, 
 		on retournera juste un boolean pour dire que le paiement a été effectué.
 
 Ajouter une classe qui sera responsable de la gestion du panier d'achat et 
 calculera le total des produits ajoutés.
 
-Gestion du panier d’achat : 
-	•	On pourra ajouter un produit dans le panier 
-	•	Supprimer un produit dans le panier 
-	•	Calculer le prix total des produits dans le panier 
+Gestion du panier d’achat : class ShoppingCart
+	•	On pourra ajouter un produit dans le panier  : addProduct(Product product)
+	•	Supprimer un produit dans le panier : removeProduct(Product product)
+	•	Calculer le prix total des produits dans le panier : calculateTotal()
 	•	Effectuer un paiement (en vérifiant que le paiement a été effectué)
+	  		boolean checkout(Payment payment) {
+				double amount = calculateTotal();
+				return payment.pay(amount);
+			}
+			
+			for(Product product : products) {
+				total += product.getPrice();
+				
+			}
+			
+			
+			
+			
+			
+			
+Interface Payment : 
+	- boolean pay(double amount)
+
+Deux types de paiement : 	
+	- class CreditCardPayment implements Payment 
+	- class PayPalPayment implements Payment
+	

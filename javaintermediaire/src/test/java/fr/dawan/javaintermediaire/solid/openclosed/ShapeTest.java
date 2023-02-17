@@ -2,6 +2,9 @@ package fr.dawan.javaintermediaire.solid.openclosed;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 import fr.dawan.javaintermediaire.solid.openclosed.good.Rectangle;
