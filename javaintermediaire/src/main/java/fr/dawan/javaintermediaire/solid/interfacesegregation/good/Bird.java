@@ -21,18 +21,11 @@ public class Bird  implements TerrestrialAnimal{
 	}
 
 	@Override
-	public void swim() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	
-	
+
 	
 }

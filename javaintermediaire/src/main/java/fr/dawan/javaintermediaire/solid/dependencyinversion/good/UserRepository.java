@@ -1,6 +1,6 @@
 package fr.dawan.javaintermediaire.solid.dependencyinversion.good;
 
-import fr.dawan.javaintermediaire.solid.dependencyinversion.bad.User;
+import fr.dawan.javaintermediaire.solid.dependencyinversion.good.User;
 
 public class UserRepository implements IUserRepository{
 

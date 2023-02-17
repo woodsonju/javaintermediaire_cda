@@ -9,5 +9,6 @@ public class Bicycle extends TransportDeviceWithoutEngine{
 	}
 
 	
-
+	// TransportationDevice c = new Bicycle(); 
+	// c.startMoving();
 }

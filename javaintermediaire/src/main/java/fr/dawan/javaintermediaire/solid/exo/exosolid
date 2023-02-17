@@ -1,0 +1,17 @@
+Créer une application de gestion de magasin en ligne qui permet aux clients 
+d'acheter des produits [id, name, price] 
+
+Cette application propose différents modes de paiement : 
+	•	Par carte de crédit [CardNumber, cvv, expirationDate]
+	•	PayPal  [email, password]
+	•	On n’implémentera pas la logique métier pour ces deux modes de paiement, 
+		on retournera juste un boolean pour dire que le paiement a été effectué.
+
+Ajouter une classe qui sera responsable de la gestion du panier d'achat et 
+calculera le total des produits ajoutés.
+
+Gestion du panier d’achat : 
+	•	On pourra ajouter un produit dans le panier 
+	•	Supprimer un produit dans le panier 
+	•	Calculer le prix total des produits dans le panier 
+	•	Effectuer un paiement (en vérifiant que le paiement a été effectué)

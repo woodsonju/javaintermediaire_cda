@@ -1,0 +1,5 @@
+Les entités logicielles doivent être ouvertes à l'extension 
+		- Le code est extensible
+		
+mais fermées aux modification 
+		- Le code a été écrit et testé, on n'y touche pas

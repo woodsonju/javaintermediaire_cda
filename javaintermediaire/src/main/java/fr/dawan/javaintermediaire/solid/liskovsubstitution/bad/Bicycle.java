@@ -6,7 +6,7 @@ public class Bicycle extends TransportationDevice{
 	public void startEngine() {
 
 		/*
-		 * Pb : On ne peut implemeter cette 
+		 * Pb : On ne peut implemeter cette méthode
 		 *		pas de moteur dans cet objet
 		 */
 		throw new RuntimeException("Pas de moteur pour l'objet " + this.getClass().getSimpleName());

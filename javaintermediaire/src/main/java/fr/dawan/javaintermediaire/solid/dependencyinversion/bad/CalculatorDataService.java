@@ -9,8 +9,8 @@ package fr.dawan.javaintermediaire.solid.dependencyinversion.bad;
 public class CalculatorDataService {
 	
 	//Méthode qui fait un traitement pour un user donné
-	//Un code sans injection de la dependance UserRepository, la dépendance 
-	//est instanciée dans la méthode
+	//Un code sans injection de la dependance UserRepository, 
+	//la dépendance est instanciée dans la méthode
 	public Object calcultateForUser(long userId) {
 		UserRepository repo = new UserRepository();   
 		User u = repo.findById(userId);
